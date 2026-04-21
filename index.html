@@ -6,10 +6,43 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <div class="container">
     <h1>Hello, I'm Yogesh 🚀</h1>
-    <p>Frontend Developer | DevOps Learner</p>
-    <a href="#" class="btn">View Projects</a>
+    <p class="typing"></p>
+    <a href="#projects" class="btn">View Projects</a>
   </div>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="cards">
+      <div class="card">HTML</div>
+      <div class="card">CSS</div>
+      <div class="card">JavaScript</div>
+      <div class="card">Docker</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="cards">
+      <div class="card">Portfolio Website</div>
+      <div class="card">E-commerce UI</div>
+    </div>
+  </section>
+
+  <script>
+    const text = "Frontend Developer | DevOps Learner";
+    let i = 0;
+    function type() {
+      if (i < text.length) {
+        document.querySelector(".typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(type, 50);
+      }
+    }
+    type();
+  </script>
+
 </body>
 </html>
