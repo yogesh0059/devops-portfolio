@@ -1,48 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>DevOps Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yogesh | Frontend Developer & DevOps Enthusiast</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <div class="container">
-    <h1>Hello, I'm Yogesh 🚀</h1>
-    <p class="typing"></p>
-    <a href="#projects" class="btn">View Projects</a>
+  <!-- Animated background -->
+  <div class="bg-grid"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <a href="#" class="logo">Yogesh<span>.</span></a>
+    <nav>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="btn-small">Hire Me</a>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="badge">
+      <span class="dot"></span> Available for opportunities
+    </div>
+    <h1>Hi, I'm <span class="gradient-text">Yogesh</span></h1>
+    <p class="typing"><span class="typed-text"></span><span class="cursor">|</span></p>
+    <p class="tagline">
+      I craft fast, beautiful web experiences and ship them with modern DevOps workflows.
+      Passionate about clean code, automation, and the cloud.
+    </p>
+    <div class="cta-group">
+      <a href="#projects" class="btn">View My Work →</a>
+      <a href="#contact" class="btn btn-ghost">Let's Talk</a>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><h3>20+</h3><p>Projects Built</p></div>
+      <div class="stat"><h3>2+</h3><p>Years Coding</p></div>
+      <div class="stat"><h3>10+</h3><p>Tools Mastered</p></div>
+      <div class="stat"><h3>∞</h3><p>Cups of Chai</p></div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>🌐 HTML</span><span>✦</span>
+      <span>🎨 CSS</span><span>✦</span>
+      <span>⚡ JavaScript</span><span>✦</span>
+      <span>⚛️ React</span><span>✦</span>
+      <span>🐳 Docker</span><span>✦</span>
+      <span>🔧 Git</span><span>✦</span>
+      <span>🐧 Linux</span><span>✦</span>
+      <span>🚀 CI/CD</span><span>✦</span>
+      <span>🌐 HTML</span><span>✦</span>
+      <span>🎨 CSS</span><span>✦</span>
+      <span>⚡ JavaScript</span><span>✦</span>
+      <span>⚛️ React</span><span>✦</span>
+      <span>🐳 Docker</span><span>✦</span>
+      <span>🔧 Git</span><span>✦</span>
+      <span>🐧 Linux</span><span>✦</span>
+      <span>🚀 CI/CD</span><span>✦</span>
+    </div>
   </div>
 
-  <section id="skills">
-    <h2>Skills</h2>
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <div class="eyebrow">What I Use</div>
+    <h2 class="gradient-text">Skills & Toolbox</h2>
     <div class="cards">
-      <div class="card">HTML</div>
-      <div class="card">CSS</div>
-      <div class="card">JavaScript</div>
-      <div class="card">Docker</div>
+      <div class="card skill"><div class="icon">🌐</div><h4>HTML5</h4><p>Advanced</p></div>
+      <div class="card skill"><div class="icon">🎨</div><h4>CSS / Tailwind</h4><p>Advanced</p></div>
+      <div class="card skill"><div class="icon">⚡</div><h4>JavaScript</h4><p>Advanced</p></div>
+      <div class="card skill"><div class="icon">⚛️</div><h4>React</h4><p>Intermediate</p></div>
+      <div class="card skill"><div class="icon">🐳</div><h4>Docker</h4><p>Intermediate</p></div>
+      <div class="card skill"><div class="icon">🔧</div><h4>Git & GitHub</h4><p>Advanced</p></div>
+      <div class="card skill"><div class="icon">🐧</div><h4>Linux</h4><p>Intermediate</p></div>
+      <div class="card skill"><div class="icon">🚀</div><h4>CI/CD</h4><p>Learning</p></div>
     </div>
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="cards">
-      <div class="card">Portfolio Website</div>
-      <div class="card">E-commerce UI</div>
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="eyebrow">Selected Work</div>
+    <h2 class="gradient-text">Featured Projects</h2>
+    <div class="cards projects">
+      <article class="card project">
+        <div class="accent accent-1"></div>
+        <div class="tag">PROJECT</div>
+        <h3>DevOps Portfolio</h3>
+        <p>Modern animated developer portfolio with glassmorphism UI and smooth scroll experiences.</p>
+        <div class="chips"><span>HTML</span><span>CSS</span><span>JS</span></div>
+      </article>
+      <article class="card project">
+        <div class="accent accent-2"></div>
+        <div class="tag">PROJECT</div>
+        <h3>E-commerce UI</h3>
+        <p>Pixel-perfect storefront with cart logic, responsive layout and a dark premium aesthetic.</p>
+        <div class="chips"><span>JavaScript</span><span>CSS Grid</span><span>UI/UX</span></div>
+      </article>
+      <article class="card project">
+        <div class="accent accent-3"></div>
+        <div class="tag">PROJECT</div>
+        <h3>Dockerized Web App</h3>
+        <p>Containerized full-stack workflow with multi-stage Docker builds and automated deployment.</p>
+        <div class="chips"><span>Docker</span><span>Nginx</span><span>CI/CD</span></div>
+      </article>
     </div>
   </section>
+
+  <!-- About -->
+  <section id="about" class="section about">
+    <div class="about-card">
+      <div class="eyebrow">About Me</div>
+      <h2 class="gradient-text">The story so far</h2>
+      <p>
+        I'm a developer who loves the intersection of <b>design</b>, <b>code</b>, and <b>infrastructure</b>.
+        I build interfaces that feel effortless and pipelines that ship them safely.
+      </p>
+      <p>
+        When I'm not coding, you'll find me exploring new DevOps tools, contributing to open source,
+        or experimenting with self-hosted setups.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <div class="eyebrow">Get in Touch</div>
+    <h2 class="gradient-text">Let's build something great</h2>
+    <p class="tagline">Have a project, an idea, or just want to say hi? My inbox is always open.</p>
+    <a href="mailto:hello@yogesh.dev" class="btn">Say Hello ✉️</a>
+    <div class="socials">
+      <a href="#">GitHub</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Twitter</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Yogesh — Built with <span style="color:#00ffcc">❤</span> & lots of chai</p>
+  </footer>
 
   <script>
-    const text = "Frontend Developer | DevOps Learner";
-    let i = 0;
-    function type() {
-      if (i < text.length) {
-        document.querySelector(".typing").innerHTML += text.charAt(i);
-        i++;
-        setTimeout(type, 50);
-      }
-    }
-    type();
-  </script>
+    const roles = [
+      "Frontend Developer",
+      "DevOps Enthusiast",
+      "Cloud Native Builder",
+      "Open Source Lover"
+    ];
+    const target = document.querySelector(".typed-text");
+    let r = 0, i = 0, deleting = false;
 
+    function tick() {
+      const word = roles[r];
+      if (!deleting) {
+        target.textContent = word.slice(0, ++i);
+        if (i === word.length) { deleting = true; return setTimeout(tick, 1500); }
+      } else {
+        target.textContent = word.slice(0, --i);
+        if (i === 0) { deleting = false; r = (r + 1) % roles.length; }
+      }
+      setTimeout(tick, deleting ? 40 : 80);
+    }
+    tick();
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add("visible"); });
+    }, { threshold: 0.12 });
+    document.querySelectorAll(".card, .section h2, .section .eyebrow, .stat, .about-card")
+      .forEach(el => { el.classList.add("reveal"); io.observe(el); });
+  </script>
 </body>
 </html>
