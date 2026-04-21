@@ -64,8 +64,7 @@ docker run -d -p 8080:80 devops-portfolio
 
 ## 📬 Contact
 
-* GitHub: (Add your link here)
-* LinkedIn: (Add your link here)
+* GitHub: https://github.com/yogesh0059/devops-portfolio
 
 ---
 
